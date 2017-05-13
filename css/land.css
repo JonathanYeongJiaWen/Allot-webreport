@@ -1,0 +1,173 @@
+
+.noscroll {
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;
+  min-height: 69vh;
+  background-color: #2196F3;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.cover__container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.cover__container * {
+   margin: 0;
+}
+
+.cover__container *:not(:first-child) {
+  margin-top: 24px;
+}
+
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header__menu {
+  margin-right: 20px;
+}
+
+.header__menu:focus {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.header__subtitle {
+  margin-left: 9px;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nav--visible {
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.nav::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.nav__container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  background-color: #FFF;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transform: translateX(calc(-100% - 8px));
+  -moz-transform: translateX(calc(-100% - 8px));
+  -ms-transform: translateX(calc(-100% - 8px));
+  -o-transform: translateX(calc(-100% - 8px));
+  transform: translateX(calc(-100% - 8px));
+  will-change: transform;
+}
+
+.nav--animatable .nav__container {
+  transition: transform 0.13s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.nav--visible.nav--animatable .nav__container {
+  transition: transform 0.33s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.nav--visible::before {
+  opacity: 1;
+}
+
+.nav--visible .nav__container {
+  transform: none;
+}
+
+.nav__header {
+  height: 100px;
+  background-color: #2196F3;
+  color: #FFF;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.nav__content a:link,
+.nav__content a:visited {
+  display: block;
+  padding: 20px;
+  color: #212121;
+  cursor: default;
+}
+
+.nav__content a:hover,
+.nav__content a:focus {
+  background-color: #E0E0E0;
+}
+
+.nav__content a:active {
+  background-color: #BDBDBD;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 25%;
+  display: block;
+  overflow-x: auto;
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+@media screen and (max-width: 840px) {
+  .content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__subtitle {
+    display: none;
+  }
+}
+
