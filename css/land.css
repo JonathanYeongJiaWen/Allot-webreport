@@ -5,7 +5,7 @@
 
 .cover {
   width: 100%;
-  min-height: 69vh;
+  min-height: 91vh;
   background-color: #2196F3;
   color: #FFF;
   display: flex;
@@ -54,6 +54,10 @@
   height: 100%;
   overflow: hidden;
   pointer-events: none;
+}
+
+.font {
+    font-family: 'Product Sans', Arial, sans-serif;
 }
 
 .nav--visible {
