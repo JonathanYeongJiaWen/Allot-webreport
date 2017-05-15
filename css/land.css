@@ -1,12 +1,14 @@
-
+.primaryc {
+   background-color: #3F90FF;
+}
 .noscroll {
   overflow: hidden;
 }
 
 .cover {
   width: 100%;
-  min-height: 91vh;
-  background-color: #2196F3;
+  min-height: 82vh;
+  background-color: #3F90FF;
   color: #FFF;
   display: flex;
   align-items: center;
