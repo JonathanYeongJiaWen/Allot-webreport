@@ -11,9 +11,11 @@
   add mailing list or contact in footer
   Add dynamic breadcrums
   Add autotype
-  PUT ALL JAVASCRIPT IN EXTERNAL JS FILE
+
   -->
+
   <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,15 +30,14 @@
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
     <!-- CSS-->
-    <link href="css/materialize.css" rel="stylesheet">
-    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/assets.css" rel="stylesheet">
     <link href="css/land.css" rel="stylesheet">
     <link href="css/git.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/waves.css">
   </head>
   <body>
-    <nav class="primaryc" role="navigation" style="box-shadow: none">
-      <div class="nav-wrapper container">
+    <nav style="background-color: #3F90FF" role="navigation" style="box-shadow: none">
+      <div class="nav-wrapper container" style="background-color: #3F90FF">
         <a id="logo-container" href="/" class="brand-logo white-text" style="font-family: Roboto; font-weight: 300;">
         All<img src="images/icon.png">t</span>
       </a>
@@ -102,11 +103,9 @@
 </div>
 <div class="github-commit">
   <div class="container">
-    <div class="commit">
+    <div>
       Latest Commit on Github:
-      &nbsp;&nbsp;
-      <a href="#" class="sha">80f7627</a>
-      &nbsp;&nbsp;
+      <a href="#" style="color: #f0f0f0, margin: 0 6px 0 6px;">7c2527cd8be60b840ae7ad1faefd3b8f0d91b385</a>
       <span class="date">2 days ago</span>
       <a id="github-button" target="_blank" href="https://www.github.com/projectallot" class="btn-flat right grey-text text-lighten-5 waves-effect waves-light hide-on-small-only">Github</a>
     </div>
@@ -127,7 +126,7 @@
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
     <div class="card-action">
-      <a href="#">Download</a>
+      <a class="waves-effect waves-orange" href="#">Download</a>
       <a href="#">More info</a>
     </div>
   </div>
@@ -142,7 +141,7 @@
 <div class="row center">
 <div class="col s12 m10 offset-m1 l8 offset-l2 light">
   Follow us on <a href="#">Google+</a>
-  or read our blog for more details. We're working towards releasing an initial version of the desktop shell for general testing soon. <span id="milestone-text" style="display: initial;">You can track our progress to the <a id="milestone-link" href="https://github.com/papyros/papyros-shell/milestone/2">next development milestone</a> using the progress bar below:</span>
+  or read our blog for more details. We're working towards releasing an initial version of the desktop shell for general testing soon. <span id="milestone-text" style="display: initial;">You can track our progress to the <a id="milestone-link" href="">next development milestone</a> using the progress bar below:</span>
 </div>
 </div>
 <div id="milestone-container" class="row" style="opacity: 1; display: initial; transition: 0.7s ease-in;">
@@ -168,6 +167,14 @@ Support us on BountySource
 </div>
 <br>
 <br>
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+  </div>
+      
 <div class="divider"></div>
 <div class="parallax-container">
 Allot was built with our users in mind
@@ -297,11 +304,47 @@ Allot was built with our users in mind
 </div>
 </div>
 </div>
-<!--  Scripts-->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/materialize.min.js"></script>
-<script src="js/init.js"></script>
+			<!--  Javascript initialisation -->
+                        <script src="js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+                        <script src="js/animation.js"></script>
+                        <script src="js/forms.js"></script>
+                        <script src="js/modal.js"></script>
+                        <script src="js/slider.js"></script>
+                        <script src="js/assets.js"></script>
+                        <script src="js/global.js"></script>
+                        <script src="js/tabs.js"></script>
+                        <script src="js/buttons.js"></script>
+                        <script src="js/hammer.min.js"></script>
+                        <script src="js/parallax.js"></script>
+                        <script src="js/tapTarget.js"></script>
+                        <script src="js/cards.js"></script>
+                        <script src="js/initial.js"></script>
+                        <script src="js/picker.date.js"></script>
+                        <script src="js/toasts.js"></script>
+                        <script src="js/carousel.js"></script>
+                        <script src="js/init.js"></script>
+                        <script src="js/picker.js"></script>
+                        <script src="js/tooltip.js"></script>
+                        <script src="js/character_counter.js"></script>
+                        <script src="js/jquery.easing.1.3.js"></script>
+                        <script src="js/prism.js"></script>
+                        <script src="js/transitions.js"></script>
+                        <script src="js/chips.js"></script>
+                        <script src="js/jquery.hammer.js"></script>
+                        <script src="js/pushpin.js"></script>
+                        <script src="js/velocity.min.js"></script>
+                        <script src="js/collapsible.js"></script>
+                        <script src="js/jquery.timeago.min.js"></script>
+                        <script src="js/scrollFire.js"></script>
+                        <script src="js/waves.js"></script>
+                        <script src="js/datepicker.js"></script>
+                        <script src="js/scrollspy.js"></script>
+                        <script src="js/materialbox.js"></script>
+                        <script src="js/sideNav.js"></script>
+                        <script src="js/dropdown.js"></script>
+
+
 </body>
 <footer class="page-footer blue">
 <div class="container">
