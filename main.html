@@ -34,11 +34,17 @@
     <link rel="stylesheet" href="css/waves.css">
   </head>
   <body>
+  <style>
+    .pointer{ 
+      cursor: pointer; 
+    }
+  </style>
     <nav style="background-color: #3F90FF" role="navigation" style="box-shadow: none">
       <div class="nav-wrapper container" style="background-color: #3F90FF">
         <a id="logo-container" href="/" class="brand-logo white-text" style="font-family: Roboto; font-weight: 300;">
         All<img src="images/icon.png">t</span>
       </a>
+
       <ul class="right hide-on-med-and-down">
         
         
@@ -96,7 +102,7 @@
     <h1 class="font">Allot</h1>
     <h5 class="col s12 light center">A revolutionary tool to facilitate and reform learning</h4>
     
-    <a href="#" class="waves-effect waves-light btn-large orange">Get Started</a>
+    <a href="#" class="waves-effect waves-light btn-large orange z-depth-2">Get Started</a>
   </div>
 </div>
 <div class="github-commit">
@@ -118,27 +124,54 @@
 <div class="col s12 m4">
   <div class="card">
     <div class="card-content">
-      <h2 class="header">Introduction<i class="material-icons right">more_vert</i></h2>
-      <p class="caption">Allot is a intelligent and dynamic service to facilitate learning on a whole new scale by improving time management and boosting productivity of students.
-
-      Ta</p>
+      <h3 class="header">Introduction<i class="material-icons right dropdown-button pointer" type="button" data-activates='dropdown1' >more_vert</i></h2>
+      <p class="caption">Allot is a intelligent and dynamic service to facilitate learning on a whole new scale by improving time management and boosting productivity of students.</p>
     </div>
+      <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
     <div class="card-action">
-      <a class="waves-effect waves-orange" href="#">Download</a>
+      <a href="#">Download</a>
       <a href="#">More info</a>
     </div>
   </div>
 </div>
 </div>
 <br>
+<div class="container">
+<h4 class="col s12 light center">Implementation</h4>
+</div>
+<div class="container">
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Student</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Teachers</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Schools</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+       </div> 
+        <br>
 <div class="divider"></div>
 <br>
 <div class="row center">
-<h4 class="col s12 light">Alpha coming soon</h4>
+<h4 class="col s12 light">Beta coming soon</h4>
 </div>
 <div class="row center">
 <div class="col s12 m10 offset-m1 l8 offset-l2 light">
@@ -163,16 +196,16 @@
   Allot currently has no commercial funding, and development is done by team members and third-party contributors in their spare time. Help fund the development of allot so we can spend more time working on development and get more contributors involved.
 </div>
 </div>
-<a class="waves-effect waves-light btn orange lighten-1" href="#">
+<a class="waves-effect waves-light btn orange lighten-1 align-center" href="#">
 Support us on BountySource
 </a>
 </div>
 <br>
 <br>
 <div class="divider"></div>
-<div class="parallax-container">
+<div class="parallax-container" style="height: 300px">
 Allot was built with our users in mind
-<div class="parallax"><img src="images/background.jpg" style="display: block; transform: translate3d(-50%, 314px, 0px);"></div>
+<div class="parallax"><img src="images/background.png" style="display: block; transform: translate3d(-50%, 314px, 0px);"></div>
 </div>
 <br>
 <div id="intro" class="section scrollspy">
@@ -212,15 +245,29 @@ Allot was built with our users in mind
 </div>
 </div>
 </div>
+
+<!-- Screenshots -->
+  <div class="col s12">
+    <h2 class="center header text_h2 black-text">Benefits</h2>
+  </div>
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+  </div>
+
+
 <div class="container">
 <h2 class="header text_b"> Our Team </h2>
 <div class="row">
 <div class="col s12 m5 l4">
 <div class="card card-avatar">
   <div class="waves-effect waves-block waves-light">
-    <img class="activator" src="img/avatar1.png">
+    <img class="activator materialboxed" src="img/avatar1.png">
   </div>
-  <div class="card-content">
+  <div class="card-content z-depth-2">
     <span class="card-title activator grey-text text-darken-4">Morgan Lee
       <br>
       <small><em><a class="orange-text text-darken-1" href="https://www.github.com/alamo18">Leader</a></em></small>
@@ -242,10 +289,10 @@ Allot was built with our users in mind
   </div>
 </div>
 </div>
-<div class="col s12 m4 l4">
+<div class="col s4">
 <div class="card card-avatar">
   <div class="waves-effect waves-block waves-light">
-    <img class="activator" src="images/avatar3.jpg">
+    <img class="activator materialboxed" src="images/avatar3.jpg">
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">Benedict Ng<br>
@@ -268,10 +315,10 @@ Allot was built with our users in mind
   </div>
 </div>
 </div>
-<div class="col s12 m4 l4">
+<div class="col s4">
 <div class="card card-avatar">
   <div class="waves-effect waves-block waves-light">
-    <img class="activator" src="images/avatar4.jpg">
+    <img class="activator materialboxed" src="images/avatar4.jpg">
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">Jonathan Yeong<br>
@@ -344,7 +391,7 @@ Allot was built with our users in mind
 <div class="row">
 <div class="col l6 s12">
 <h5 class="white-text">Allot</h5>
-<p class="grey-text text-lighten-4">Disc here
+<p class="grey-text text-lighten-4">Allot is a intelligent and dynamic service to facilitate learning on a whole new scale by improving time management and boosting productivity of students.
 </p>
 </div>
 <div class="col l4 offset-l2 s12">
